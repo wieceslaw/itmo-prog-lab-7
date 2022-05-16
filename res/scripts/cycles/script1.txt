@@ -1,0 +1,5 @@
+               execute_script res/scripts/cycles/script1.txt
+        execute_script res/scripts/cycles/script2.txt
+        execute_script res/scripts/cycles/script3.txt
+        execute_script res/scripts/cycles/script4.txt
+        execute_script res/scripts/cycles/script5.txt

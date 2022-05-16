@@ -1,0 +1,3 @@
+execute_script res/scripts/cycles/script1.txt
+help
+info

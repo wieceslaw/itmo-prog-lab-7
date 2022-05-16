@@ -1,0 +1,10 @@
+# git ignore
+.idea/
+Client/pom.xml
+Client/target
+db/test.sql
+pom.xml
+logs/
+TODOs.md
+Common/target/
+Server/target/
