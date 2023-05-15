@@ -1,0 +1,17 @@
+version: '3.9'
+services:
+  postgresql:
+    image: postgres:15
+    container_name: prog-lab-postgres
+    environment:
+      - POSTGRES_DB=lab7
+      - POSTGRES_USER=lab7user
+      - POSTGRES_PASSWORD=lab7pass
+    network_mode: host
+    volumes:
+      - ./scripts/sql/init.sql:/docker-entrypoint-initdb.d/init.sql
+      - prog-lab-postgres:/var/lib/postgesql/data
+
+
+volumes:
+  prog-lab-postgres:

@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+}
+
+group = 'se.ifmo.ru'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation project(path: ':common')
+}
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'se.ifmo.ru.client.Client'
+    }
+
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+}

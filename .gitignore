@@ -1,10 +1,16 @@
 # git ignore
 .idea/
-Client/pom.xml
-Client/target
-db/test.sql
+client/pom.xml
+client/target
+scripts/sql/test.sql
 pom.xml
 logs/
 TODOs.md
-Common/target/
-Server/target/
+common/target/
+server/target/
+
+# Ignore Gradle project-specific cache directory
+.gradle
+
+# Ignore Gradle build output directory
+build
